@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <!-- Metadados -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nerds e Atletas</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Cabeçalho -->
+  <header>
+    <h1>Nerds e Atletas</h1>
+    <p>Grupo mais 👉🏻 TOP BROTHER 👈🏻 da UFPA</p>
+  </header>
+
+  <!-- Conteúdo principal -->
+  <main>
+
+    <!-- Seção SOBRE -->
+    <section class="sobre">
+      <h2>SOBRE NÓS</h2>
+      <p>Somos discentes em busca do nosso tão sonhado diploma de bacharelado na área de Tecnologia da Informação.</p>
+      <p>Movidos pela curiosidade, pela inovação e pelo desejo de transformar o mundo através da tecnologia, enfrentamos os desafios diários com dedicação e entusiasmo.</p>
+      <p>Nosso objetivo vai além de conquistar um título: queremos <strong>aprender</strong>, <strong>crescer</strong> profissionalmente e <strong>fazer a diferença</strong> no mercado de TI.</p>
+      <p>Cada linha de código, cada projeto entregue e cada noite em claro representa um passo rumo ao nosso futuro.</p>
+      <p>Estamos construindo, juntos, não apenas uma carreira, mas também um propósito.</p>
+    </section>
+
+    <!-- Seção Time dos Campeões -->
+    <section class="time">
+      <div class="container-imagens">
+        <img src="na.jpg" alt="Time dos campeões" width="600" />
+      </div>
+    </section>
+    <br>
+
+    <!-- Seção dos Especialistas -->
+    <section class="especialistas">
+      <h2>NOSSOS ESPECIALISTAS E SUAS DEVIDAS ÁREAS</h2>
+
+      <p><strong>Lucas Vinícius</strong>: Desenvolvedor Front-End</p>
+      <div class="container-imagens">
+        <img src="flamengor.jpg" alt="Lore" width="300" />
+        <img src="lv.png" alt="Outrah" width="300" />
+      </div>
+
+      <p><strong>Carlos Daniel</strong>: Desenvolvedor Web</p>
+      <div class="container-imagens">
+        <img src="lazaro.jpg" alt="Lore" width="300" />
+        <img src="ng.jpg" alt="Outrah" width="300" />
+      </div>
+      <br>
+
+      <p><strong>Simão Marshall</strong>: Analaista de Sistemas de IA</p>
+      <div class="container-imagens">
+        <img src="psgrp.jpg" alt="Outrah" width="300" />
+        <img src="sm.jpg" alt="Simão Marshall" width="300" />
+      </div>
+    </section>
+
+    <!-- Jobson -->
+    <p><strong>Jobson Pinheiro</strong>: Educador Tecnológico</p>
+    <div class="container-imagens">
+      <img src="naoimporta.jpg" alt="Job" width="300" />
+      <img src="jnmpp.jpg" alt="Outra" width="300" />
+    </div>
+
+    <!-- Lorena com vídeo local -->
+    <p><strong>Lorena Valeksa</strong>: Desenvolvimento de soluções de Machine Learning, UI/UX, Social Media e Pentester</p>
+    <div class="container-imagens">
+      <video width="300" autoplay muted loop>
+        <source src="gif.mp4" type="video/mp4" />
+        Seu navegador não suporta vídeos HTML5.
+      </video>
+    </div>
+
+    <!-- Vídeo do YouTube -->
+    <section class="video-local">
+      <h2>Assista à nossa produção audiovisual "Oeiras Vista de Cima - Tradições e o Terreiro da Mãe Dilma"</h2>
+      <div style="display: flex; justify-content: center; margin: 20px 0;">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/dlVNaC8eKAk" 
+          title="Apresentação Especial" frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <!-- Seção explicando o nome -->
+    <section class="Por que Nerds e Atletas">
+      <h2>Por que Nerds e Atletas?</h2>
+      <ul>
+        <li>Somos Nerds</li>
+        <li>Alguns são atletas</li>
+        <li>O grupo precisava de nome pra disciplina de Engenharia de Software</li>
+      </ul>
+    </section>
+
+    <!-- Seção CTA -->
+    <section class="cta">
+      <h2>❤ Obrigada ❤</h2>
+      <a href="https://youtu.be/zosskhYNyHA?si=XDr0gsL6JWi5cQbt" target="_blank" class="botao-cta">Assistir ao Vídeo</a>
+    </section>
+
+    <!-- Seção Seja Membro -->
+    <section class="seja-membro" id="formulario-membro">
+      <h2>🤝 Faça Parte do Nerds e Atletas!</h2>
+      <p>Quer receber atualizações, eventos e novidades do nosso grupo?</p>
+
+      <!-- Botão para mostrar o formulário -->
+      <button onclick="mostrarFormulario()" class="botao-seja-membro">SEJA MEMBRO</button>
+
+      <!-- Formulário oculto -->
+      <form id="form-membro" style="display: none;">
+        <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required />
+        <input type="email" id="email" name="email" placeholder="Seu e-mail" required />
+
+        <select id="sexo" name="sexo" required>
+          <option value="" disabled selected>Selecione seu sexo</option>
+          <option value="feminino">Feminino</option>
+          <option value="masculino">Masculino</option>
+          <option value="outro">Outro</option>
+          <option value="prefiro-nao-dizer">Prefiro não dizer</option>
+        </select>
+
+        <input type="number" id="idade" name="idade" placeholder="Idade" required min="10" max="100" />
+
+        <input type="number" id="anoGraduacao" name="anoGraduacao" placeholder="Ano de graduação (ex: 2026)" required min="2020" max="2100" />
+
+        <select id="area" name="area" required>
+          <option value="" disabled selected>Área da Tecnologia</option>
+          <option value="desenvolvimento-web">Desenvolvimento Web</option>
+          <option value="ciencia-dados">Ciência de Dados</option>
+          <option value="inteligencia-artificial">Inteligência Artificial</option>
+          <option value="ciberseguranca">Cibersegurança</option>
+          <option value="redes">Redes de Computadores</option>
+          <option value="banco-dados">Banco de Dados</option>
+          <option value="engenharia-software">Engenharia de Software</option>
+          <option value="infraestrutura">Infraestrutura</option>
+        </select>
+
+        <button type="submit" class="botao-enviar">Inscrever-se</button>
+      </form>
+
+      <!-- Mensagem de sucesso -->
+      <p id="mensagem-sucesso" style="display: none;">✅ Obrigado por se inscrever!</p>
+    </section>
+
+  </main>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>&copy; 2025 Nerds e Atletas, por Lorena Valeska. Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- Script para interagir com o formulário -->
+  <script>
+    function mostrarFormulario() {
+      document.getElementById("form-membro").style.display = "block";
+      document.getElementById("mensagem-sucesso").style.display = "none";
+      document.getElementById("formulario-membro").scrollIntoView({ behavior: "smooth" });
+    }
+
+    document.getElementById("form-membro").addEventListener("submit", async function (event) {
+      event.preventDefault();
+
+      const nome = document.getElementById("nome").value;
+      const email = document.getElementById("email").value;
+      const sexo = document.getElementById("sexo").value;
+      const idade = parseInt(document.getElementById("idade").value);
+      const anoGraduacao = parseInt(document.getElementById("anoGraduacao").value);
+      const area = document.getElementById("area").value;
+
+      try {
+        const response = await fetch('http://localhost:3000/api/membros', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({ nome, email, sexo, idade, anoGraduacao, area })
+        });
+
+        if (response.ok) {
+          document.getElementById("mensagem-sucesso").style.display = "block";
+          document.getElementById("form-membro").reset();
+          document.getElementById("form-membro").style.display = "none";
+        } else {
+          alert('Erro ao enviar os dados');
+        }
+      } catch (error) {
+        alert('Erro na conexão com o servidor');
+        console.error(error);
+      }
+    });
+  </script>
+
+</body>
+</html>

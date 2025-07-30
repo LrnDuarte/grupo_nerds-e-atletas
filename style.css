@@ -1,0 +1,180 @@
+/* Reset básico para margens, padding e box-sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos do corpo da página */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f2f2f2;
+  color: #333;
+  padding: 20px;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #4433a9;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5rem;
+}
+
+/* Conteúdo principal */
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+/* Seções */
+section {
+  margin-bottom: 30px;
+}
+
+/* Botões e links da área CTA */
+.cta {
+  text-align: center;
+}
+
+.cta a {
+  display: inline-block;
+  background-color: #1a288a;
+  color: white;
+  padding: 15px 25px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.cta a:hover {
+  background-color: #07150d;
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #ddd;
+  margin-top: 40px;
+}
+
+/* Imagens em containers */
+.container-imagens {
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* espaço entre as imagens */
+  margin-top: 20px;
+}
+
+.container-imagens img {
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  .cta a {
+    width: 100%;
+    padding: 12px;
+  }
+}
+
+/* Seção Seja Membro */
+.seja-membro {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 30px;
+  text-align: center;
+}
+
+.seja-membro h2 {
+  margin-bottom: 10px;
+  color: #4433a9;
+}
+
+.seja-membro p {
+  margin-bottom: 20px;
+}
+
+/* Botão de abrir formulário */
+.botao-seja-membro {
+  background-color: #4433a9;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.botao-seja-membro:hover {
+  background-color: #32268b;
+}
+
+/* Formulário */
+#form-membro {
+  display: none;
+  margin-top: 20px;
+  text-align: left;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#form-membro label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+#form-membro input,
+#form-membro select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+/* Botão de envio */
+.botao-enviar {
+  background-color: #1a288a;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+}
+
+.botao-enviar:hover {
+  background-color: #07150d;
+}
+
+/* Mensagem de sucesso */
+#mensagem-sucesso {
+  display: none;
+  color: green;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
